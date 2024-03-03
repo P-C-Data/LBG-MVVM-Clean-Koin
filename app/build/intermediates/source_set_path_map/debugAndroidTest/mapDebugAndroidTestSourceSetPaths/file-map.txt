@@ -1,0 +1,35 @@
+com.clean.lbg.test.app-core-1.5.0-0 C:\Users\PR20406131\.gradle\caches\transforms-3\0b2842b6ad49a24c776abeadb056af28\transformed\core-1.5.0\res
+com.clean.lbg.test.app-customview-poolingcontainer-1.0.0-1 C:\Users\PR20406131\.gradle\caches\transforms-3\0bae8a92c9111ab76429e0c71f680b89\transformed\customview-poolingcontainer-1.0.0\res
+com.clean.lbg.test.app-runtime-saveable-release-2 C:\Users\PR20406131\.gradle\caches\transforms-3\0d56b069a4577ac3f41788a990bc752b\transformed\runtime-saveable-release\res
+com.clean.lbg.test.app-ui-test-release-3 C:\Users\PR20406131\.gradle\caches\transforms-3\14511a356660b53d653103aa207b2217\transformed\ui-test-release\res
+com.clean.lbg.test.app-ui-test-junit4-release-4 C:\Users\PR20406131\.gradle\caches\transforms-3\1b668b16f58c869d595da2886c4c89e9\transformed\ui-test-junit4-release\res
+com.clean.lbg.test.app-ui-graphics-release-5 C:\Users\PR20406131\.gradle\caches\transforms-3\1dd49c190647041b08bb50f02fbff384\transformed\ui-graphics-release\res
+com.clean.lbg.test.app-core-runtime-2.2.0-6 C:\Users\PR20406131\.gradle\caches\transforms-3\2872f89b7600d774c1032d79f340e8ad\transformed\core-runtime-2.2.0\res
+com.clean.lbg.test.app-activity-ktx-1.8.2-7 C:\Users\PR20406131\.gradle\caches\transforms-3\28a0337046ad90acb6a272e5276bc7b0\transformed\activity-ktx-1.8.2\res
+com.clean.lbg.test.app-activity-1.8.2-8 C:\Users\PR20406131\.gradle\caches\transforms-3\324be20fe454420e9997ee6970caa83c\transformed\activity-1.8.2\res
+com.clean.lbg.test.app-savedstate-1.2.1-9 C:\Users\PR20406131\.gradle\caches\transforms-3\3be733b58138164c65b8e497ccf53bb8\transformed\savedstate-1.2.1\res
+com.clean.lbg.test.app-runtime-release-10 C:\Users\PR20406131\.gradle\caches\transforms-3\47f1efb36b438abbfe7e2d0494a605c4\transformed\runtime-release\res
+com.clean.lbg.test.app-ui-unit-release-11 C:\Users\PR20406131\.gradle\caches\transforms-3\4c6ddc9f301bce8f726461ea3a653ccb\transformed\ui-unit-release\res
+com.clean.lbg.test.app-lifecycle-viewmodel-2.7.0-12 C:\Users\PR20406131\.gradle\caches\transforms-3\4f0906a1d2b8c5a0d332021de4dc8efa\transformed\lifecycle-viewmodel-2.7.0\res
+com.clean.lbg.test.app-ui-geometry-release-13 C:\Users\PR20406131\.gradle\caches\transforms-3\609440f0db17f95c5e65fbc88666a05b\transformed\ui-geometry-release\res
+com.clean.lbg.test.app-ui-text-release-14 C:\Users\PR20406131\.gradle\caches\transforms-3\6203e8060bd3620fea5158b778d1d79c\transformed\ui-text-release\res
+com.clean.lbg.test.app-lifecycle-process-2.7.0-15 C:\Users\PR20406131\.gradle\caches\transforms-3\622dcfa1a2aacbb9550a2c9ac74472d9\transformed\lifecycle-process-2.7.0\res
+com.clean.lbg.test.app-activity-compose-1.8.2-16 C:\Users\PR20406131\.gradle\caches\transforms-3\6ac41984d0b25dd0bc1b3707272d99e3\transformed\activity-compose-1.8.2\res
+com.clean.lbg.test.app-ui-release-17 C:\Users\PR20406131\.gradle\caches\transforms-3\7b600ebc3af8ba1378f14eec36759c06\transformed\ui-release\res
+com.clean.lbg.test.app-savedstate-ktx-1.2.1-18 C:\Users\PR20406131\.gradle\caches\transforms-3\9674c87bd3fb8ffaedcb69a8aa72e251\transformed\savedstate-ktx-1.2.1\res
+com.clean.lbg.test.app-lifecycle-runtime-ktx-2.7.0-19 C:\Users\PR20406131\.gradle\caches\transforms-3\a99fdacd0b7fa19e4e9bbeda6832c808\transformed\lifecycle-runtime-ktx-2.7.0\res
+com.clean.lbg.test.app-emoji2-1.3.0-20 C:\Users\PR20406131\.gradle\caches\transforms-3\ac2105773a9d594c4d42844768c853f0\transformed\emoji2-1.3.0\res
+com.clean.lbg.test.app-core-ktx-1.12.0-21 C:\Users\PR20406131\.gradle\caches\transforms-3\adabfc207063ee14061e81a5b3e631df\transformed\core-ktx-1.12.0\res
+com.clean.lbg.test.app-lifecycle-runtime-2.7.0-22 C:\Users\PR20406131\.gradle\caches\transforms-3\b029f78df77299525445ffe5c0e95f7e\transformed\lifecycle-runtime-2.7.0\res
+com.clean.lbg.test.app-lifecycle-viewmodel-ktx-2.7.0-23 C:\Users\PR20406131\.gradle\caches\transforms-3\b90f3eaea929d538d577edce8d2c3a11\transformed\lifecycle-viewmodel-ktx-2.7.0\res
+com.clean.lbg.test.app-core-1.12.0-24 C:\Users\PR20406131\.gradle\caches\transforms-3\c8998894f000601778454bf5df8ba5b1\transformed\core-1.12.0\res
+com.clean.lbg.test.app-profileinstaller-1.3.0-25 C:\Users\PR20406131\.gradle\caches\transforms-3\cd9753644e3aacf5fe5adb0bab284245\transformed\profileinstaller-1.3.0\res
+com.clean.lbg.test.app-ui-util-release-26 C:\Users\PR20406131\.gradle\caches\transforms-3\e21013eab5e73c5e0905402df5b0f8d2\transformed\ui-util-release\res
+com.clean.lbg.test.app-startup-runtime-1.1.1-27 C:\Users\PR20406131\.gradle\caches\transforms-3\eedb262fffb018b3415a01168f619940\transformed\startup-runtime-1.1.1\res
+com.clean.lbg.test.app-lifecycle-viewmodel-savedstate-2.7.0-28 C:\Users\PR20406131\.gradle\caches\transforms-3\f0513312d1524855a1f7903064e9443e\transformed\lifecycle-viewmodel-savedstate-2.7.0\res
+com.clean.lbg.test.app-annotation-experimental-1.4.0-29 C:\Users\PR20406131\.gradle\caches\transforms-3\ff081211bf191cd4ca035fbce995f4e2\transformed\annotation-experimental-1.4.0\res
+com.clean.lbg.test.app-lifecycle-livedata-core-2.7.0-30 C:\Users\PR20406131\.gradle\caches\transforms-3\ffa72b54471dff7e92557475e3e38a0b\transformed\lifecycle-livedata-core-2.7.0\res
+com.clean.lbg.test.app-androidTest-31 C:\Users\PR20406131\Music\rain 3.0.1\LBG MVVM-Clean_Architect-Example-with-koin\app\build\generated\res\resValues\androidTest\debug
+com.clean.lbg.test.app-mergeDebugAndroidTestResources-32 C:\Users\PR20406131\Music\rain 3.0.1\LBG MVVM-Clean_Architect-Example-with-koin\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.clean.lbg.test.app-mergeDebugAndroidTestResources-33 C:\Users\PR20406131\Music\rain 3.0.1\LBG MVVM-Clean_Architect-Example-with-koin\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.clean.lbg.test.app-debugAndroidTest-34 C:\Users\PR20406131\Music\rain 3.0.1\LBG MVVM-Clean_Architect-Example-with-koin\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

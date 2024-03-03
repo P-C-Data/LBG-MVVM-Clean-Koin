@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.clean.lbg.db.CatItemDaoTest" tests="4" failures="0" errors="0" skipped="0" time="1.573" timestamp="2024-03-02T13:24:51" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="insertFavCatImageRelationListTest" classname="com.clean.lbg.db.CatItemDaoTest" time="0.485" />
+  <testcase name="updateItem_shouldReturn_theItem" classname="com.clean.lbg.db.CatItemDaoTest" time="0.041" />
+  <testcase name="addCat_shouldReturn_theCat" classname="com.clean.lbg.db.CatItemDaoTest" time="0.028" />
+  <testcase name="deletedItem_shouldNot_be_present" classname="com.clean.lbg.db.CatItemDaoTest" time="0.023" />
+</testsuite>

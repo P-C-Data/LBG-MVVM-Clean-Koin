@@ -1,0 +1,10 @@
+03-02 18:54:49.588 16095 16112 I TestRunner: started: insertFavCatImageRelationListTest(com.clean.lbg.db.CatItemDaoTest)
+03-02 18:54:49.713  2603  3113 D Volley  : [66] iwl.a: HTTP response for request=<[ ] https://play-fe.googleapis.com/fdfe/getItems?nocache_qos=lt 0x4be64f9b NORMAL 134> [lifetime=3351], [size=41], [rc=200], [retryCount=0]
+03-02 18:54:49.714  2603  3111 D Volley  : [64] iwl.a: HTTP response for request=<[ ] https://play-fe.googleapis.com/fdfe/getItems?nocache_qos=lt 0x4be64f9b NORMAL 133> [lifetime=4405], [size=41], [rc=200], [retryCount=0]
+03-02 18:54:49.714  2603  3112 D Volley  : [65] iwl.a: HTTP response for request=<[ ] https://play-fe.googleapis.com/fdfe/getItems?nocache_qos=lt 0x4be64f9b NORMAL 132> [lifetime=4920], [size=41], [rc=200], [retryCount=0]
+03-02 18:54:49.717  2603  3059 E Finsky  : [52] szc.a(110): ItemStore: getItems RPC failed.
+03-02 18:54:49.717  2603  3095 E Finsky  : [59] szc.a(110): ItemStore: getItems RPC failed.
+03-02 18:54:49.717  2603  3059 E Finsky  : [52] szc.a(110): ItemStore: getItems RPC failed.
+03-02 18:54:49.719  2603  3119 E Finsky  : [69] szc.a(110): ItemStore: getItems RPC failed.
+03-02 18:54:49.720  2603  3118 E Finsky  : [68] szc.a(110): ItemStore: getItems RPC failed.
+03-02 18:54:50.083 16095 16112 I TestRunner: finished: insertFavCatImageRelationListTest(com.clean.lbg.db.CatItemDaoTest)

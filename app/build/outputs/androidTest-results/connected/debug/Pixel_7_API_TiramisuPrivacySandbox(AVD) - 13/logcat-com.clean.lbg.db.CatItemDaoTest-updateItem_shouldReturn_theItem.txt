@@ -1,0 +1,2 @@
+03-02 18:54:50.094 16095 16112 I TestRunner: started: updateItem_shouldReturn_theItem(com.clean.lbg.db.CatItemDaoTest)
+03-02 18:54:50.128 16095 16112 I TestRunner: finished: updateItem_shouldReturn_theItem(com.clean.lbg.db.CatItemDaoTest)

@@ -1,0 +1,224 @@
+# 2024-03-02T13:24:51.740474600Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 4
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "CatItemDaoTest"
+    test_package: "com.clean.lbg.db"
+    test_method: "insertFavCatImageRelationListTest"
+    start_time {
+      seconds: 1709385890
+      nanos: 96000000
+    }
+    end_time {
+      seconds: 1709385890
+      nanos: 600000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\logcat-com.clean.lbg.db.CatItemDaoTest-insertFavCatImageRelationListTest.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CatItemDaoTest"
+    test_package: "com.clean.lbg.db"
+    test_method: "updateItem_shouldReturn_theItem"
+    start_time {
+      seconds: 1709385890
+      nanos: 641000000
+    }
+    end_time {
+      seconds: 1709385890
+      nanos: 702000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\logcat-com.clean.lbg.db.CatItemDaoTest-updateItem_shouldReturn_theItem.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CatItemDaoTest"
+    test_package: "com.clean.lbg.db"
+    test_method: "addCat_shouldReturn_theCat"
+    start_time {
+      seconds: 1709385890
+      nanos: 713000000
+    }
+    end_time {
+      seconds: 1709385890
+      nanos: 754000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\logcat-com.clean.lbg.db.CatItemDaoTest-addCat_shouldReturn_theCat.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CatItemDaoTest"
+    test_package: "com.clean.lbg.db"
+    test_method: "deletedItem_shouldNot_be_present"
+    start_time {
+      seconds: 1709385890
+      nanos: 766000000
+    }
+    end_time {
+      seconds: 1709385890
+      nanos: 800000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\logcat-com.clean.lbg.db.CatItemDaoTest-deletedItem_shouldNot_be_present.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "C:\\Users\\PR20406131\\Music\\rain 3.0.1\\LBG MVVM-Clean_Architect-Example-with-koin\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_7_API_TiramisuPrivacySandbox(AVD) - 13\\testlog\\test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

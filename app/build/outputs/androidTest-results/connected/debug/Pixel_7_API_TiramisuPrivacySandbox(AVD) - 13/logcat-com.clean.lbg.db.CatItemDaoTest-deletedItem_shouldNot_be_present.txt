@@ -1,0 +1,2 @@
+03-02 18:54:50.171 16095 16112 I TestRunner: started: deletedItem_shouldNot_be_present(com.clean.lbg.db.CatItemDaoTest)
+03-02 18:54:50.189 16095 16112 I TestRunner: finished: deletedItem_shouldNot_be_present(com.clean.lbg.db.CatItemDaoTest)

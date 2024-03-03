@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.clean.lbg.lbgTest.viewModel.CatsDetailsViewModelTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-03-02T13:34:08" hostname="APL-5CD204842N" time="0.796">
+  <properties/>
+  <testcase name="test deleteFavCat success" classname="com.clean.lbg.lbgTest.viewModel.CatsDetailsViewModelTest" time="0.785"/>
+  <testcase name="test postFavCatData success" classname="com.clean.lbg.lbgTest.viewModel.CatsDetailsViewModelTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
