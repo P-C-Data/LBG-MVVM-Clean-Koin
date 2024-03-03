@@ -21,7 +21,7 @@
 <img src="info/6.png" width="25%"/>
 <img src="info/7.png" width="25%"/>
 <img src="info/8.png" width="25%"/>
-<img src="info/full.gif" width="25%"/>
+<img src="info/fullFlow.gif" width="25%"/>
 
 ## Table of Contents
 
