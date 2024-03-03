@@ -1,9 +1,10 @@
 <br />
   <a href="https://github.com/othneildrew/Best-README-Template">
-  <h2 align="start">Kotlin MVVM-Clean Architect-JetPack Compose-Example-with- DI-Koin, Coroutines, Retrofit, Room, Solid Principles, DRY Principle, OOPs</h2>
+  
+  ![android](https://img.shields.io/badge/android-grey.svg?logo=android)<h2 align="start">Kotlin MVVM-Clean Architect-JetPack Compose-Example-with- DI-Koin, Coroutines, Retrofit, Room, Solid Principles, DRY Principle, OOPs</h2>
 
 [![License](https://badgen.net/badge/License/Apache/blue/)](https://opensource.org/licenses/Apache-2.0)
-![MinAPI](https://badgen.net/badge/MinAPI/24/silver/)
+![MinAPI](https://badgen.net/badge/MinAPI/24/silver)
 [![Compose](https://img.shields.io/badge/compose-1.6.2-green.svg?logo=android)](https://developer.android.com/jetpack/compose)
 [![Koin](https://img.shields.io/badge/Koin-3.4.3-blue.svg?logo=koin)](https://insert-koin.io/)
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9.22-yellow.svg?logo=kotlin)](http://kotlinlang.org)
@@ -180,10 +181,14 @@ which making it easier to develop and test.
   - [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) - Library Support for
   coroutines,provides runBlocking coroutine builder used in tests.
   - [Gson](https://github.com/google/gson) - A modern JSON library for Kotlin and Java.
-  *
-  Functions([Scope](https://kotlinlang.org/docs/scope-functions.html) ,[Inline](https://kotlinlang.org/docs/inline-functions.html)
-  and [infix](https://www.geeksforgeeks.org/kotlin-infix-function-notation/) Functions)
 
+- Functions
+  - [Scope Functions](https://kotlinlang.org/docs/scope-functions.html)
+  - [Inline](https://kotlinlang.org/docs/inline-functions.html)
+  - [High Order](https://www.geeksforgeeks.org/kotlin-higher-order-functions/)
+  - [infix](https://www.geeksforgeeks.org/kotlin-infix-function-notation/)
+
+  
 # Features
 
 - Save Favorite Cats: Users have the ability to save their favorite cat images by marking them as
@@ -310,7 +315,7 @@ Recent project changes introduce factory and scoped definitions to cater to dive
 factory<GetCatsUseCase> { GetCatsUseCaseImpl(get()) }
 ```
 
-scoped definition: Creates an object with persistence tied to an associated scope's lifetime. This fosters granular control over dependencies and contributes to improved application maintainability.
+**scoped definition:** Creates an object with persistence tied to an associated scope's lifetime. This fosters granular control over dependencies and contributes to improved application maintainability.
 Scoped Dependency Injection in Action:
 
 ```Kotlin
@@ -345,10 +350,10 @@ class MyViewModel @Inject constructor(
 
 **Benefits of Scalable Scoping:**
 
-Enhanced Control: Manage dependency lifespans more precisely, aligning them with their usage patterns.
-Improved Scalability: Facilitate the growth of the application with efficient dependency management.
-Increased Maintainability: Promote cleaner code structure and easier dependency reasoning.
-This approach equips your project with a robust foundation for dependency injection, enabling you to create well-structured, maintainable, and scalable applications.
+***Enhanced Control:*** Manage dependency lifespans more precisely, aligning them with their usage patterns.
+***Improved Scalability:*** Facilitate the growth of the application with efficient dependency management.
+***Increased Maintainability:*** Promote cleaner code structure and easier dependency reasoning.
+This approach equips project with a robust foundation for dependency injection, enabling you to create well-structured, maintainable, and scalable applications.
 
 ## Unit Testing
 
