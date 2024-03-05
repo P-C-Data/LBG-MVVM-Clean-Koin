@@ -184,7 +184,7 @@ which making it easier to develop and test.
 
 - Functions
   - <details><summary><a href="https://kotlinlang.org/docs/scope-functions.html"><b>Scope Functions</b></a></summary><blockquote>
-      <details><summary> <b>let</b> </summary><blockquote>
+      <details><summary><a href="https://github.com/P-C-Data/LBG-MVVM-Clean-Koin/blob/de33b31631dbdb8434f1cf7913bf4b31faa2b1fc/app/src/main/java/com/clean/lbg/presentation/ui/features/cats/view/CatsScreen.kt#L331C27-L337C34"><b>let</b></a> </summary><blockquote>
            it is used for executing a block of code on a non-null object.
         The result of the block is the return value of the let expression.
         
@@ -199,7 +199,7 @@ which making it easier to develop and test.
     </blockquote>
     </details>
     
-    <details><summary><b>with </b></summary> <blockquote>
+    <details><summary><a href="https://github.com/P-C-Data/LBG-MVVM-Clean-Koin/blob/de33b31631dbdb8434f1cf7913bf4b31faa2b1fc/app/src/main/java/com/clean/lbg/domain/usecase/cats/GetCatsUseCaseImpl.kt#L13C1-L22C10"><b>with </b></a></summary> <blockquote>
           It is used to call multiple methods on the same object without repeating the object reference.
           It does not operate on the context object.
 
@@ -214,11 +214,11 @@ which making it easier to develop and test.
     </blockquote>  
     </details>
     
-    <details><summary><b>also  </b></summary> <blockquote>
+    <details><summary><a href="https://github.com/P-C-Data/LBG-MVVM-Clean-Koin/blob/de33b31631dbdb8434f1cf7913bf4b31faa2b1fc/app/src/main/java/com/clean/lbg/data/database/LBGDatabase.kt#L25C14-L26C34"><b>also </b></a></summary> <blockquote>
           It is used for additional operations  on the object.
           The return value is the original object.
       
-    ```js
+    ```js 	
            val result = "Hello, Kotlin!".also {
         println("Original: $it")
         it.toUpperCase()
@@ -243,7 +243,7 @@ which making it easier to develop and test.
     </blockquote>  
     </details>
     
-    <details><summary><b>apply</b></summary> <blockquote>
+    <details><summary><a href="https://github.com/P-C-Data/LBG-MVVM-Clean-Koin/blob/de33b31631dbdb8434f1cf7913bf4b31faa2b1fc/app/src/main/java/com/clean/lbg/presentation/ui/features/cats/CatsActivity.kt#L49C22-L55C22"><b>apply</b></a></summary> <blockquote>
         It is used to initialize an object or apply operations on an object.
         The result is the context object itself.
        
