@@ -1,67 +1,58 @@
-package com.clean.lbg.domain.test.usecase.catDetails
+package com.clean.lbg.domain.mappers.usecase.catDetails
 
 import com.clean.lbg.data.NetworkResult
-import com.clean.lbg.data.models.catDetails.PostFavCatModel
+import com.clean.lbg.domain.mappers.models.CallSuccessModel
 import com.clean.lbg.domain.repositories.CatDetailsRepository
-import com.clean.lbg.domain.test.CallSuccessModel
-import com.clean.lbg.domain.usecase.catsDetail.PostFavCatUseCase
-import com.clean.lbg.domain.usecase.catsDetail.PostFavCatUseCaseImpl
-import com.clean.lbg.models.catMocks.MockPostFavCatModel
+import com.clean.lbg.domain.usecase.catsDetail.DeleteFavCatUseCaseImpl
 import com.clean.lbg.models.catMocks.MockSuccessResponse
-import com.clean.lbg.models.catMocks.toRequestPostFavCatData
 import com.clean.lbg.models.catMocks.toResponsePostSuccess
-import com.clean.lbg.utils.Constants
-import junit.framework.TestCase.assertEquals
+import com.clean.lbg.utils.TestTags
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
 import kotlinx.coroutines.test.runTest
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.ResponseBody.Companion.toResponseBody
-import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.mockito.InjectMocks
 import org.mockito.Mock
 import org.mockito.Mockito
 import org.mockito.Mockito.`when`
-import org.mockito.MockitoAnnotations
 import org.mockito.junit.MockitoJUnitRunner
 import retrofit2.Response
 
 @RunWith(MockitoJUnitRunner::class)
-class PostFavCatUseCaseTest {
+class DeleteFavCatUseCaseTest {
     @Mock
     private lateinit var mockRepository: CatDetailsRepository
 
-    private lateinit var mockUseCae: PostFavCatUseCase
+    @InjectMocks
+    private lateinit var mockUseCae: DeleteFavCatUseCaseImpl
 
-    @Before
-    fun setUp() {
-        MockitoAnnotations.openMocks(this)
-        mockUseCae = PostFavCatUseCaseImpl(mockRepository)
-    }
 
     @OptIn(ExperimentalCoroutinesApi::class)
     @Test
-    fun `execute should emit success when repository call is successful`() = runTest(
-        UnconfinedTestDispatcher()
-    ) {
-        // Given
-        val imageId = "123"
-        val response = toResponsePostSuccess(MockSuccessResponse())
-        `when`(mockRepository.postFavouriteCat(PostFavCatModel(imageId, Constants.SUB_ID)))
-            .thenReturn(response)
-        // When
-        val resultFlow = mockUseCae.execute(imageId)
-        // Then
-        resultFlow.collect { result ->
-            if (result is NetworkResult.Success) {
-                assertEquals(response.body()?.message, result.data?.successMessage)
-                assertEquals(response.body()?.id, result.data?.id)
-            }
+    fun `execute should emit loading state and then success on successful Delete fav data`() =
+        runTest(
+            UnconfinedTestDispatcher()
+        ) {
+            val imageId = "123"
+            val response = toResponsePostSuccess(MockSuccessResponse())
+            `when`(mockRepository.deleteFavouriteCatApi(TestTags.FAV_ID)).thenReturn(response)
+
+            // Collect the flow and assert emitted values
+            val results = mutableListOf<NetworkResult<CallSuccessModel>>()
+            mockUseCae.execute(imageId, TestTags.FAV_ID).collect { results.add(it) }
+
+            // Assert emitted values
+            assert(results.size == 2)
+            assert(results[0] is NetworkResult.Loading)
+            assert(results[1] is NetworkResult.Success)
+
+            val successResult = results[1] as NetworkResult.Success
+            assert(successResult.data?.successMessage == response.body()?.message)
+            assert(successResult.data?.id == response.body()?.id)
         }
-
-    }
-
 
     @OptIn(ExperimentalCoroutinesApi::class)
     @Test
@@ -70,9 +61,8 @@ class PostFavCatUseCaseTest {
     ) {
         val error = "Invalid request"
         val imageId = "123"
-        val postFavCatModel = toRequestPostFavCatData(MockPostFavCatModel())
 
-        Mockito.`when`(mockRepository.postFavouriteCat(postFavCatModel)).thenReturn(
+        `when`(mockRepository.deleteFavouriteCatApi(TestTags.FAV_ID)).thenReturn(
             Response.error(
                 400,
                 error.toResponseBody("application/json".toMediaType())
@@ -80,13 +70,14 @@ class PostFavCatUseCaseTest {
         )
 
         val result = mutableListOf<NetworkResult<CallSuccessModel>>()
-        mockUseCae.execute(imageId).collect { result.add(it) }
+        mockUseCae.execute(imageId, TestTags.FAV_ID).collect { result.add(it) }
 
         assert(result.size == 2) // Loading + Error states
         assert(result[0] is NetworkResult.Loading)
         assert(result[1] is NetworkResult.Error)
+
         // assertions based on the actual error received
-        val errorBody = mockRepository.postFavouriteCat(postFavCatModel).errorBody()
+        val errorBody = mockRepository.deleteFavouriteCatApi(TestTags.FAV_ID).errorBody()
         val errorString = errorBody?.string()
         assert(errorString == error)
 
@@ -100,15 +91,16 @@ class PostFavCatUseCaseTest {
         val simulatedErrorMessage = "Simulated error"
         val imageId = "123"
 
-        Mockito.`when`(mockRepository.postFavouriteCat(PostFavCatModel(imageId, Constants.SUB_ID)))
+        `when`(mockRepository.deleteFavouriteCatApi(TestTags.FAV_ID))
             .thenThrow(RuntimeException(simulatedErrorMessage))
 
         val result = mutableListOf<NetworkResult<CallSuccessModel>>()
-        mockUseCae.execute(imageId).collect { result.add(it) }
+        mockUseCae.execute(imageId, TestTags.FAV_ID).collect { result.add(it) }
 
         assert(result.size == 2) // Loading + Error states
         assert(result[0] is NetworkResult.Loading)
         assert(result[1] is NetworkResult.Error)
+
         //  assertions based on the simulated error
         val errorResult = result[1] as NetworkResult.Error
         assert(errorResult.message == simulatedErrorMessage)

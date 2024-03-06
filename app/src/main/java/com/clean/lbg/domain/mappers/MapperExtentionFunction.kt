@@ -1,8 +1,10 @@
-package com.clean.lbg.domain.test
+package com.clean.lbg.domain.mappers
 
 import com.clean.lbg.data.models.SuccessResponse
 import com.clean.lbg.data.models.catData.CatResponse
 import com.clean.lbg.data.models.catData.FavouriteCatsItem
+import com.clean.lbg.domain.mappers.models.CallSuccessModel
+import com.clean.lbg.domain.mappers.models.CatDataModel
 
 //CatData Mapper function used for Cat image listData at Cats
 fun CatResponse.mapCatsDataItems(): CatDataModel {

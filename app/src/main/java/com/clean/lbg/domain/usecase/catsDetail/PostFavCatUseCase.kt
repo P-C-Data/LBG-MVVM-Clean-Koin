@@ -1,7 +1,7 @@
 package com.clean.lbg.domain.usecase.catsDetail
 
 import com.clean.lbg.data.NetworkResult
-import com.clean.lbg.domain.test.CallSuccessModel
+import com.clean.lbg.domain.mappers.models.CallSuccessModel
 import kotlinx.coroutines.flow.Flow
 
 interface PostFavCatUseCase {

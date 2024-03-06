@@ -1,11 +1,11 @@
-package com.clean.lbg.domain.test.mappers
+package com.clean.lbg.domain.mappers.mappers
 
 import com.clean.lbg.data.models.SuccessResponse
 import com.clean.lbg.data.models.catData.CatResponse
 import com.clean.lbg.data.models.catData.FavouriteCatsItem
-import com.clean.lbg.domain.test.mapCatsDataItems
-import com.clean.lbg.domain.test.mapFavCatsDataItems
-import com.clean.lbg.domain.test.mapSuccessData
+import com.clean.lbg.domain.mappers.mapCatsDataItems
+import com.clean.lbg.domain.mappers.mapFavCatsDataItems
+import com.clean.lbg.domain.mappers.mapSuccessData
 import com.clean.lbg.models.catMocks.MockFavouriteCatsResponse
 import com.clean.lbg.models.catMocks.MockSuccessResponse
 import com.clean.lbg.models.catMocks.MocksCatsDataModel

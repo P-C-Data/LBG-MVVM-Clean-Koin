@@ -3,7 +3,7 @@ package com.clean.lbg.modelsMocks
 import com.clean.lbg.data.NetworkResult
 import com.clean.lbg.data.models.catData.FavouriteCatsItem
 import com.clean.lbg.data.models.catData.Image
-import com.clean.lbg.domain.test.CatDataModel
+import com.clean.lbg.domain.mappers.models.CatDataModel
 import com.google.gson.annotations.SerializedName
 import retrofit2.Response
 

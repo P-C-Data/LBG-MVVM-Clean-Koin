@@ -11,8 +11,8 @@ import com.clean.lbg.data.repositories.CatsRepositoryImpl
 import com.clean.lbg.data.services.CatsService
 import com.clean.lbg.data.services.cats.CatApiServiceHelperImpl
 import com.clean.lbg.data.services.cats.CatsDatabaseHelperImpl
+import com.clean.lbg.domain.mappers.models.CatDataModel
 import com.clean.lbg.domain.repositories.CatsRepository
-import com.clean.lbg.domain.test.CatDataModel
 import com.clean.lbg.domain.usecase.cats.GetCatsUseCaseImpl
 import com.clean.lbg.domain.usecase.cats.GetFavCatsUseCase
 import com.clean.lbg.domain.usecase.cats.GetFavCatsUseCaseImpl

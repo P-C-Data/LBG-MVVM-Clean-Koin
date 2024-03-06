@@ -1,8 +1,8 @@
-package com.clean.lbg.domain.test.usecase.cats
+package com.clean.lbg.domain.mappers.usecase.cats
 
 import com.clean.lbg.data.NetworkResult
+import com.clean.lbg.domain.mappers.models.CatDataModel
 import com.clean.lbg.domain.repositories.CatsRepository
-import com.clean.lbg.domain.test.CatDataModel
 import com.clean.lbg.domain.usecase.cats.GetFavCatsUseCase
 import com.clean.lbg.domain.usecase.cats.GetFavCatsUseCaseImpl
 import com.clean.lbg.models.catMocks.MockFavouriteCatsResponse

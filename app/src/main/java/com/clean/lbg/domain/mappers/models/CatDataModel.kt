@@ -1,4 +1,4 @@
-package com.clean.lbg.domain.test
+package com.clean.lbg.domain.mappers.models
 
 data class CatDataModel(
     val name: String? = "",

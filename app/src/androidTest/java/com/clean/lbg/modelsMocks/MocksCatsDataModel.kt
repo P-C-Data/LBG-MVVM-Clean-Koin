@@ -2,7 +2,7 @@ package com.clean.lbg.modelsMocks
 
 import com.clean.lbg.data.models.catData.Breed
 import com.clean.lbg.data.models.catData.CatResponse
-import com.clean.lbg.domain.test.CatDataModel
+import com.clean.lbg.domain.mappers.models.CatDataModel
 import retrofit2.Response
 
 data class MocksCatsDataModel(

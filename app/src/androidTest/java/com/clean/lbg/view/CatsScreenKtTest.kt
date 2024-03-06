@@ -11,7 +11,7 @@ import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
-import com.clean.lbg.domain.test.CatDataModel
+import com.clean.lbg.domain.mappers.models.CatDataModel
 import com.clean.lbg.modelsMocks.MockFavouriteCatsResponse
 import com.clean.lbg.modelsMocks.MocksCatsDataModel
 import com.clean.lbg.modelsMocks.toResponseCats

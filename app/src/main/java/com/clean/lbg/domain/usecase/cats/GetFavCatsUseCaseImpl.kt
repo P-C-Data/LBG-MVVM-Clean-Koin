@@ -1,8 +1,8 @@
 package com.clean.lbg.domain.usecase.cats
 
 import com.clean.lbg.data.NetworkResult
-import com.clean.lbg.domain.test.CatDataModel
-import com.clean.lbg.domain.test.mapFavCatsDataItems
+import com.clean.lbg.domain.mappers.mapFavCatsDataItems
+import com.clean.lbg.domain.mappers.models.CatDataModel
 import com.clean.lbg.domain.repositories.CatsRepository
 import com.clean.lbg.utils.Constants
 import kotlinx.coroutines.flow.catch

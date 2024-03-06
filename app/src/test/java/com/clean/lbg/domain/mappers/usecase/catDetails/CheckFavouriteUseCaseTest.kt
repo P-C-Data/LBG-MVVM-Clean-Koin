@@ -1,4 +1,4 @@
-package com.clean.lbg.domain.test.usecase.catDetails
+package com.clean.lbg.domain.mappers.usecase.catDetails
 
 import com.clean.lbg.domain.repositories.CatDetailsRepository
 import com.clean.lbg.domain.usecase.catsDetail.CheckFavouriteUseCaseImpl
