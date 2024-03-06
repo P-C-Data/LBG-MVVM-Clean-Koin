@@ -1,9 +1,10 @@
 <br />
   <a href="https://github.com/othneildrew/Best-README-Template">
-  <h2 align="start">Kotlin MVVM-Clean Architect-JetPack Compose-Example-with- DI-Koin, Coroutines, Retrofit, Room, Solid Principles, DRY Principle, OOPs</h2>
+  
+  ![android](https://img.shields.io/badge/android-grey.svg?logo=android)<h2 align="start">Kotlin MVVM-Clean Architect-JetPack Compose-Example-with- DI-Koin, Coroutines, Retrofit, Room, Solid Principles, DRY Principle, OOPs</h2>
 
 [![License](https://badgen.net/badge/License/Apache/blue/)](https://opensource.org/licenses/Apache-2.0)
-![MinAPI](https://badgen.net/badge/MinAPI/24/silver/)
+![MinAPI](https://badgen.net/badge/MinAPI/24/silver)
 [![Compose](https://img.shields.io/badge/compose-1.6.2-green.svg?logo=android)](https://developer.android.com/jetpack/compose)
 [![Koin](https://img.shields.io/badge/Koin-3.4.3-blue.svg?logo=koin)](https://insert-koin.io/)
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9.22-yellow.svg?logo=kotlin)](http://kotlinlang.org)
@@ -21,7 +22,7 @@
 <img src="info/6.png" width="25%"/>
 <img src="info/7.png" width="25%"/>
 <img src="info/8.png" width="25%"/>
-<img src="info/full.gif" width="25%"/>
+<img src="info/fullFlow.gif" width="25%"/>
 
 ## Table of Contents
 
@@ -180,10 +181,143 @@ which making it easier to develop and test.
   - [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) - Library Support for
   coroutines,provides runBlocking coroutine builder used in tests.
   - [Gson](https://github.com/google/gson) - A modern JSON library for Kotlin and Java.
-  *
-  Functions([Scope](https://kotlinlang.org/docs/scope-functions.html) ,[Inline](https://kotlinlang.org/docs/inline-functions.html)
-  and [infix](https://www.geeksforgeeks.org/kotlin-infix-function-notation/) Functions)
 
+- Functions
+  - <details><summary><a href="https://kotlinlang.org/docs/scope-functions.html"><b>Scope Functions</b></a></summary><blockquote>
+      <details><summary><a href="https://github.com/P-C-Data/LBG-MVVM-Clean-Koin/blob/de33b31631dbdb8434f1cf7913bf4b31faa2b1fc/app/src/main/java/com/clean/lbg/presentation/ui/features/cats/view/CatsScreen.kt#L331C27-L337C34"><b>let</b></a> </summary><blockquote>
+           it is used for executing a block of code on a non-null object.
+        The result of the block is the return value of the let expression.
+        
+    ```js
+      	 val result = "Hello, Kotlin!".let {
+		 println(it)
+		 it.length
+		 }
+		 // Output: Hello, Kotlin!
+		 // result: 13
+      ```
+    </blockquote>
+    </details>
+    
+    <details><summary><a href="https://github.com/P-C-Data/LBG-MVVM-Clean-Koin/blob/de33b31631dbdb8434f1cf7913bf4b31faa2b1fc/app/src/main/java/com/clean/lbg/domain/usecase/cats/GetCatsUseCaseImpl.kt#L13C1-L22C10"><b>with </b></a></summary> <blockquote>
+          It is used to call multiple methods on the same object without repeating the object reference.
+          It does not operate on the context object.
+
+    ```js
+            val result = with("Hello, Kotlin!") {
+            println(this)
+            length
+            }
+           // Output: Hello, Kotlin!
+          // result: 13
+    ```
+    </blockquote>  
+    </details>
+    
+    <details><summary><a href="https://github.com/P-C-Data/LBG-MVVM-Clean-Koin/blob/de33b31631dbdb8434f1cf7913bf4b31faa2b1fc/app/src/main/java/com/clean/lbg/data/database/LBGDatabase.kt#L25C14-L26C34"><b>also </b></a></summary> <blockquote>
+          It is used for additional operations  on the object.
+          The return value is the original object.
+      
+    ```js 	
+           val result = "Hello, Kotlin!".also {
+        println("Original: $it")
+        it.toUpperCase()
+      }
+      // Output: Original: Hello, Kotlin!
+      // result: Hello, Kotlin!
+    ```
+    </blockquote>  
+    </details>
+    <details><summary><b>run  </b></summary> <blockquote>
+          It is similar to let but operates on the context object itself.
+          The result of the block is the return value of the run expression.
+      
+    ```js
+           val result = "Hello, Kotlin!".run {
+            println(this)
+            this.length
+          }
+        // Output: Hello, Kotlin!
+        // result: 13
+    ```
+    </blockquote>  
+    </details>
+    
+    <details><summary><a href="https://github.com/P-C-Data/LBG-MVVM-Clean-Koin/blob/de33b31631dbdb8434f1cf7913bf4b31faa2b1fc/app/src/main/java/com/clean/lbg/presentation/ui/features/cats/CatsActivity.kt#L49C22-L55C22"><b>apply</b></a></summary> <blockquote>
+        It is used to initialize an object or apply operations on an object.
+        The result is the context object itself.
+       
+    ```js
+           val result = StringBuilder().apply {
+           append("Hello, ")
+           append("Kotlin!")
+         }.toString()
+         // result: Hello, Kotlin!
+		```
+    <blockquote>
+    </details>
+  </blockquote>
+  </details>
+  
+  - <details><summary><a href="https://kotlinlang.org/docs/inline-functions.html"><b>Inline Function</b></a></summary><blockquote>
+         It is used to inline the function body at the call site, which can improve performance in certain scenarios.
+  
+      ```js
+          inline fun <reified T> inlineExample(value: T): String {
+          return "Value: $value, Type: ${T::class.simpleName}"
+          }
+
+          val result = inlineExample(42)
+          // result: Value: 42, Type: Int
+       ```
+        
+  </blockquote>
+  </details>
+  
+  - <details><summary><a href="https://www.geeksforgeeks.org/kotlin-higher-order-functions/"><b>High Order Function</b></a></summary><blockquote>
+         It is a function that takes another function as a parameter or returns a function.
+  
+     ```js
+          // Higher order function example: Calculator
+          fun calculate(x: Int, y: Int, operation: (Int, Int) -> Int): Int {
+          return operation(x, y)
+          }
+          fun add(x: Int, y: Int): Int {
+          return x + y
+          }
+          fun subtract(x: Int, y: Int): Int {
+          return x - y
+          }
+          fun multiply(x: Int, y: Int): Int {
+          return x * y
+          }
+        fun main() {
+        val result1 = calculate(10, 5, ::add)
+        println("Addition: $result1") // Output: Addition: 15
+        val result2 = calculate(10, 5, ::subtract)
+        println("Subtraction: $result2") // Output: Subtraction: 5
+        val result3 = calculate(10, 5, ::multiply)
+        println("Multiplication: $result3") // Output: Multiplication: 50
+        }
+      ```
+   </blockquote>
+   </details>
+     
+  - <details><summary><a href="https://www.geeksforgeeks.org/kotlin-infix-function-notation/"><b>infix Function</b></a></summary><blockquote>
+         It is used to inline the function body at the call site, which can improve performance in certain scenarios.
+   
+    ```js
+          infix fun String.addExtension(extension: String): String {
+          return "$this.$extension"
+          }
+
+        val result = "file" addExtension "txt"
+        // result: file.txt
+     ```
+  </blockquote>
+  </details>
+
+  
 # Features
 
 - Save Favorite Cats: Users have the ability to save their favorite cat images by marking them as
@@ -275,8 +409,63 @@ arguments = listOf(navArgument("itemUrl") { type = NavType.StringType },
 4. According to above calls make changes in CatFullScreen.kt file
 5. Replace topbar navigation icon to back icon when you saw user full view screen and handled this
    according to back flow.
+For reference [lick haere](https://github.com/P-C-Data/LBG-MVVM-Clean-Koin-SingleActivity)
 
 🙌 Now after that we have two ways to show same flow to user✌️.
+
+<details><summary><a href="https://github.com/P-C-Data/LBG-MVVM-Clean-Koin"><b>1.Mutiple activity architechture</b></a></summary><blockquote>
+While the trend in modern Android development often leans toward a single activity architecture using fragments and the Navigation Component, there are still scenarios where separate activities might make more sense. Here are some use cases where multiple activities could be considered:
+
+<b>Independent Modules or Features:</b>
+If different sections or modules of your app are largely independent and don't share UI components or complex interactions, using separate activities can provide clear separation between these modules.
+Each activity can represent a distinct feature or functionality, making it easier to understand and maintain.
+
+<b>Different Task Affinities:</b>
+Activities with different task affinities can run in separate tasks, allowing them to exist independently in the task stack. This can be useful for certain workflows, such as having a separate authentication task.
+
+<b>Deep Linking:</b>
+If your app heavily relies on deep linking and you want to handle different deep links with distinct activities, separating them can be a clean way to organize deep linking logic.
+
+<b>Task and Document-Centric Apps:</b>
+Certain apps, such as document editors or task-centric apps, might benefit from separate activities. Each activity can represent a different document or task, providing a clear separation of contexts.
+
+<b>Legacy Codebase:</b>
+In some cases, you might be working with a legacy codebase that was designed around the multiple activity architecture. Converting to a single activity might not be feasible or might require significant refactoring.
+
+<b>Performance Considerations:</b>
+In specific performance-critical scenarios, having a minimalistic activity with a focused set of functionalities might be more efficient than hosting everything in a single activity.
+
+<b>Platform Limitations:</b>
+Some platform features or third-party libraries might work more seamlessly with multiple activities. Adhering to these requirements could influence the architecture choice.
+
+It's important to note that even in these cases, the use of fragments and the Navigation Component can still be employed within each activity to manage the UI components and navigation within that specific context. The decision between single and multiple activities depends on various factors, including the app's structure, navigation requirements, user experience goals, and the team's preferences and expertise.
+
+</blockquote>
+</details>
+
+<details><summary><a href="https://github.com/P-C-Data/LBG-MVVM-Clean-Koin-SingleActivity"><b>2.SingleActivity Architecture</b></summary><blockquote>
+The preference for a single activity architecture over multiple activities in Android development has become more common in recent years. Here are some reasons why single activity architecture is often preferred:
+
+<b>Navigation Component:</b> With the introduction of the Navigation Component in Android, it became easier to manage navigation between different screens or destinations within a single activity. The Navigation Component simplifies the implementation of navigation graphs and provides a more standardized way of handling navigation.
+
+<b>Fragment Navigation:</b> Single activity architecture aligns well with the use of Fragments for UI components. Fragments can be used to represent different screens or sections of the app, and the single activity can host and manage these fragments.
+
+<b>Lifecycle Management:</b> A single activity architecture simplifies the lifecycle management of the application. With only one activity, it's easier to handle the lifecycle events and avoid issues related to managing multiple activity lifecycles.
+
+<b>Resource Efficiency:</b> Creating and destroying activities can be resource-intensive. With a single activity, you reduce the overhead associated with starting and stopping multiple activities, leading to a more efficient use of system resources.
+
+<b>Consistent UI and Theming:</b> A single activity can provide a consistent UI and theming across the entire application. This can result in a more cohesive user experience, as the UI elements and styling remain consistent throughout the app.
+
+<b>Easier Communication:</b> Communicating between fragments within the same activity is simpler compared to communicating between different activities. Fragments within the same activity share the same lifecycle, making it easier to pass data and events between them.
+
+<b>Simplified Back Stack:</b> The back stack management is often simpler with a single activity architecture. The Navigation Component provides a back stack that is easier to manage and understand compared to managing multiple activity back stacks.
+
+<b>Transition Animations:</b> Transition animations between fragments are smoother when they are hosted within the same activity. This can lead to a more polished and seamless user experience.
+
+While single activity architecture has its advantages,'again' it's essential to note that the choice between single or multiple activities depends on the specific requirements of the app and the preferences of the development team. Some apps may still benefit from a multiple activity architecture, especially if they have distinct and independent sections that don't share UI components or if there are specific use cases where separate activities make more sense.
+
+</blockquote>
+</details>
 
 # Koin Module Enhancements for Improved Scalability
 
@@ -310,7 +499,7 @@ Recent project changes introduce factory and scoped definitions to cater to dive
 factory<GetCatsUseCase> { GetCatsUseCaseImpl(get()) }
 ```
 
-scoped definition: Creates an object with persistence tied to an associated scope's lifetime. This fosters granular control over dependencies and contributes to improved application maintainability.
+**scoped definition:** Creates an object with persistence tied to an associated scope's lifetime. This fosters granular control over dependencies and contributes to improved application maintainability.
 Scoped Dependency Injection in Action:
 
 ```Kotlin
@@ -345,10 +534,10 @@ class MyViewModel @Inject constructor(
 
 **Benefits of Scalable Scoping:**
 
-Enhanced Control: Manage dependency lifespans more precisely, aligning them with their usage patterns.
-Improved Scalability: Facilitate the growth of the application with efficient dependency management.
-Increased Maintainability: Promote cleaner code structure and easier dependency reasoning.
-This approach equips your project with a robust foundation for dependency injection, enabling you to create well-structured, maintainable, and scalable applications.
+***Enhanced Control:*** Manage dependency lifespans more precisely, aligning them with their usage patterns.
+***Improved Scalability:*** Facilitate the growth of the application with efficient dependency management.
+***Increased Maintainability:*** Promote cleaner code structure and easier dependency reasoning.
+This approach equips project with a robust foundation for dependency injection, enabling you to create well-structured, maintainable, and scalable applications.
 
 ## Unit Testing
 
